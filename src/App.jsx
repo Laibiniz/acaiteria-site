@@ -9,7 +9,7 @@ import Contatos from "./Pages/Contatos";
 
 function App() {
   return (
-    <BrowserRouter>
+   <BrowserRouter basename="/acaiteria-site">
 
       <Navbar />
 

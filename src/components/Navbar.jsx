@@ -8,7 +8,7 @@ export default function Navbar() {
         Açaí Prime
       </h1>
 
-     <nav className="flex gap-6 text-white">
+    <nav className="flex gap-3 md:gap-6 text-white text-sm md:text-base">
 
   <Link to="/" className="hover:text-purple-400 transition">
     Início

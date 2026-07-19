@@ -1,5 +1,13 @@
 @import "tailwindcss";
+@keyframes slide {
+  0% {
+    transform: translateX(-800px);
+  }
 
+  100% {
+    transform: translateX(calc(100vw + 800px));
+  }
+}
 @keyframes floatRotate {
   0% {
     transform:

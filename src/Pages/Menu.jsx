@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+
 const produtos = [
   {
     nome: "Açaí Tradicional",
@@ -48,12 +49,46 @@ const [granola, setGranola] = useState(false);
           <h1 className="text-6xl font-bold text-purple-500">
             Nosso Cardápio 🍇
           </h1>
+          <div className="mb-12">
+   <h2 className="text-4xl font-bold text-purple-400 mt-6">
+    💯 Mais Vendidos
+  </h2>
+
+<div className="grid md:grid-cols-3 gap-6 mb-16">
+   <div className="bg-zinc-900 border border-yellow-500 rounded-3xl p-5 text-center">
+<h3 className="text-3xl font-bold">       
+   🥇 Açaí Supreme
+      </h3>
+<p className="text-zinc-400 mt-2">      
+    Morango, Banana, Nutella e Leite Ninho
+      </p>
+    </div>
+
+ <div className="bg-zinc-900 border border-orange-500 rounded-3xl p-5 text-center">  
+ <h3 className="text-3xl font-bold">        
+  🥈 Açaí Tropical
+      </h3>
+      <p className="text-zinc-400">
+        Kiwi, Manga e Frutas Frescas
+      </p>
+    </div>
+
+   <div className="bg-zinc-900 border border-orange-500 rounded-3xl p-5 text-center">
+      <h3 className="text-3xl font-bold">
+        🥉 Açaí Kids
+      </h3>
+      <p className="text-zinc-400">
+        Granola, Banana e Chocolate
+      </p>
+    </div>
+
+  </div>
+</div>
 
           <p className="text-zinc-400 mt-4 text-xl">
             Escolha seu açaí favorito
           </p>
         </div>
-
         <div className="flex justify-center gap-4 mb-12">
           <button className="bg-purple-600 px-5 py-2 rounded-full">
             Todos

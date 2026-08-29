@@ -28,75 +28,109 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     hover:-translate-y-1\r
     transition-all\r
     duration-300\r
-  `,children:[`Ver Cardápio`,(0,j.jsx)(`span`,{className:`text-xl`,children:`→`})]}),(0,j.jsxs)(`div`,{className:`flex justify-center lg:justify-start gap-6 mt-10 flex-wrap`,children:[(0,j.jsxs)(`div`,{className:`border-r border-purple-900 pr-6`,children:[(0,j.jsx)(dr,{className:`text-purple-500 text-2xl drop-shadow-[0_0_15px_#a855f7]`}),(0,j.jsx)(`p`,{className:`text-xs text-zinc-400`,children:`Ingredientes`}),(0,j.jsx)(`p`,{className:`text-sm text-white`,children:`Frescos`})]}),(0,j.jsxs)(`div`,{className:`border-r border-purple-900 pr-6`,children:[(0,j.jsx)(pr,{className:`text-purple-500 text-2xl drop-shadow-[0_0_15px_#a855f7]`}),(0,j.jsx)(`p`,{className:`text-xs text-zinc-400`,children:`Entrega`}),(0,j.jsx)(`p`,{className:`text-sm text-white`,children:`Rápida`})]}),(0,j.jsxs)(`div`,{className:`text-center lg:text-left`,children:[(0,j.jsx)(fr,{className:`text-purple-500 text-2xl drop-shadow-[0_0_15px_#a855f7]`}),(0,j.jsx)(`p`,{className:`text-xs text-zinc-400`,children:`Feito com`}),(0,j.jsx)(`p`,{className:`text-sm text-white`,children:`Paixão`})]})]})]}),(0,j.jsx)(`div`,{className:`flex flex-col lg:flex-row items-center justify-between`,children:(0,j.jsx)(`img`,{src:hr,alt:`Açaí Prime`,className:`w-full max-w-md lg:max-w-xl mx-auto`})})]})})]})}var _r=[{nome:`Açaí Tradicional`,preco:`R$ 18,90`,imagem:`https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?q=80&w=1200&auto=format&fit=crop`,ingredientes:`Banana, granola e leite condensado`},{nome:`Açaí Premium`,preco:`R$ 24,90`,imagem:`https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=1200&auto=format&fit=crop`,ingredientes:`Morango, Nutella e leite ninho`},{nome:`Combo Tropical`,preco:`R$ 29,90`,imagem:`https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop`,ingredientes:`Kiwi, manga, banana e mel`}];function vr(){let[e,t]=(0,x.useState)(!1),[n,r]=(0,x.useState)(``),[i,a]=(0,x.useState)(!1),[o,s]=(0,x.useState)(!1),[c,l]=(0,x.useState)(!1),[u,d]=(0,x.useState)(!1),[f,p]=(0,x.useState)(!1),[m,h]=(0,x.useState)(!1);return(0,j.jsxs)(`div`,{className:`min-h-screen bg-black text-white`,children:[(0,j.jsx)(`div`,{className:`absolute top-0 left-0 w-96 h-96 bg-purple-700/20 blur-[120px]`}),(0,j.jsx)(`div`,{className:`absolute bottom-0 right-0 w-96 h-96 bg-purple-500/20 blur-[120px]`}),(0,j.jsxs)(`div`,{className:`relative z-10`,children:[(0,j.jsxs)(`div`,{className:`text-center mb-16 mt-20`,children:[(0,j.jsxs)(`h1`,{className:`hero-title mt-8`,children:[`Nosso `,(0,j.jsx)(`span`,{className:`text-purple-500`,children:`Cardápio 🍇`})]}),(0,j.jsxs)(`div`,{className:`mb-12`,children:[(0,j.jsx)(`h2`,{className:`text-4xl font-bold text-purple-400 mt-6`,children:`💯 Mais Vendidos`}),(0,j.jsxs)(`div`,{className:`grid md:grid-cols-3 gap-4 mb-12`,children:[(0,j.jsxs)(`div`,{className:`\r
+  `,children:[`Ver Cardápio`,(0,j.jsx)(`span`,{className:`text-xl`,children:`→`})]}),(0,j.jsxs)(`div`,{className:`flex justify-center lg:justify-start gap-6 mt-10 flex-wrap`,children:[(0,j.jsxs)(`div`,{className:`border-r border-purple-900 pr-6`,children:[(0,j.jsx)(dr,{className:`text-purple-500 text-2xl drop-shadow-[0_0_15px_#a855f7]`}),(0,j.jsx)(`p`,{className:`text-xs text-zinc-400`,children:`Ingredientes`}),(0,j.jsx)(`p`,{className:`text-sm text-white`,children:`Frescos`})]}),(0,j.jsxs)(`div`,{className:`border-r border-purple-900 pr-6`,children:[(0,j.jsx)(pr,{className:`text-purple-500 text-2xl drop-shadow-[0_0_15px_#a855f7]`}),(0,j.jsx)(`p`,{className:`text-xs text-zinc-400`,children:`Entrega`}),(0,j.jsx)(`p`,{className:`text-sm text-white`,children:`Rápida`})]}),(0,j.jsxs)(`div`,{className:`text-center lg:text-left`,children:[(0,j.jsx)(fr,{className:`text-purple-500 text-2xl drop-shadow-[0_0_15px_#a855f7]`}),(0,j.jsx)(`p`,{className:`text-xs text-zinc-400`,children:`Feito com`}),(0,j.jsx)(`p`,{className:`text-sm text-white`,children:`Paixão`})]})]})]}),(0,j.jsx)(`div`,{className:`flex flex-col lg:flex-row items-center justify-between`,children:(0,j.jsx)(`img`,{src:hr,alt:`Açaí Prime`,className:`w-full max-w-md lg:max-w-xl mx-auto`})})]})})]})}var _r=[{nome:`Açaí Tradicional`,preco:`R$ 18,90`,imagem:`https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?q=80&w=1200&auto=format&fit=crop`,ingredientes:`Banana, granola e leite condensado`},{nome:`Açaí Premium`,preco:`R$ 24,90`,imagem:`https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=1200&auto=format&fit=crop`,ingredientes:`Morango, Nutella e leite ninho`},{nome:`Combo Tropical`,preco:`R$ 29,90`,imagem:`https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop`,ingredientes:`Kiwi, manga, banana e mel`}];function vr(){let[e,t]=(0,x.useState)(0),n=[{emoji:`🥇`,nome:`Açaí Supreme`,ingredientes:`Morango, Banana, Nutella e Leite Ninho`},{emoji:`🥈`,nome:`Açaí Tropical`,ingredientes:`Kiwi, Manga e Frutas Frescas`},{emoji:`🥉`,nome:`Açaí Kids`,ingredientes:`Granola, Banana e Chocolate`}];(0,x.useEffect)(()=>{let e=setInterval(()=>{t(e=>(e+1)%n.length)},3e3);return()=>clearInterval(e)},[]);let[r,i]=(0,x.useState)(!1),[a,o]=(0,x.useState)(``),[s,c]=(0,x.useState)(!1),[l,u]=(0,x.useState)(!1),[d,f]=(0,x.useState)(!1),[p,m]=(0,x.useState)(!1),[h,g]=(0,x.useState)(!1),[_,v]=(0,x.useState)(!1);return(0,j.jsxs)(`div`,{className:`min-h-screen bg-black text-white`,children:[(0,j.jsx)(`div`,{className:`absolute top-0 left-0 w-96 h-96 bg-purple-700/20 blur-[120px]`}),(0,j.jsx)(`div`,{className:`absolute bottom-0 right-0 w-96 h-96 bg-purple-500/20 blur-[120px]`}),(0,j.jsxs)(`div`,{className:`relative z-10`,children:[(0,j.jsxs)(`div`,{className:`text-center mb-16 mt-20`,children:[(0,j.jsx)(`h1`,{className:`\r
+  hero-title\r
+  text-4xl\r
+  md:text-6xl\r
+  text-center\r
+  mt-20\r
+`,children:`Nosso Cardápio 🍇`}),(0,j.jsxs)(`div`,{className:`mb-20`,children:[(0,j.jsxs)(`h3`,{className:`hero-title text-5xl md:text-7xl text-center mt-6`,children:[`💯 Mais `,(0,j.jsx)(`span`,{className:`text-purple-500`,children:`Vendidos`})]}),(0,j.jsx)(`div`,{className:`md:hidden flex justify-center mb-12`,children:(0,j.jsxs)(`div`,{className:`\r
     bg-zinc-900\r
+    rounded-2xl\r
+    p-4\r
+    text-center\r
+    w-full\r
+    max-w-[330px]\r
     border\r
     border-purple-500/30\r
-    rounded-2xl\r
-    p-4\r
-    text-center\r
-    max-w-[330px]\r
-    mx-auto\r
-    shadow-lg shadow-purple-500/10\r
-    hover:shadow-purple-500/30\r
-    hover:border-purple-400\r
-    hover:-translate-y-1\r
-    transition-all\r
-    duration-300\r
-  `,children:[(0,j.jsx)(`h3`,{className:`text-2xl font-bold`,children:`🥇 Açaí Supreme`}),(0,j.jsx)(`p`,{className:`text-zinc-400 mt-2 text-sm`,children:`Morango, Banana, Nutella e Leite Ninho`})]}),(0,j.jsxs)(`div`,{className:`\r
-    bg-zinc-900\r
+    shadow-lg\r
+    shadow-purple-500/10\r
+    animate-fade-in\r
+  `,children:[(0,j.jsxs)(`h3`,{className:`text-xl font-bold`,children:[n[e].emoji,` `,n[e].nome]}),(0,j.jsx)(`p`,{className:`text-zinc-400 mt-2 text-sm`,children:n[e].ingredientes})]},e)}),(0,j.jsxs)(`div`,{className:`hidden md:grid md:grid-cols-3 gap-4 mb-12 justify-items-center`,children:[(0,j.jsxs)(`div`,{className:`\r
+      bg-zinc-900\r
+      rounded-2xl\r
+      p-4\r
+      text-center\r
+      w-full\r
+      max-w-[330px]\r
+      border\r
+      border-purple-500/30\r
+      shadow-lg\r
+      shadow-purple-500/10\r
+      hover:border-purple-500\r
+      hover:shadow-purple-500/30\r
+      hover:-translate-y-1\r
+      transition-all\r
+      duration-300\r
+    `,children:[(0,j.jsx)(`h3`,{className:`text-xl md:text-2xl font-bold`,children:`🥇 Açaí Supreme`}),(0,j.jsx)(`p`,{className:`text-zinc-400 mt-2 text-sm`,children:`Morango, Banana, Nutella e Leite Ninho`})]}),(0,j.jsxs)(`div`,{className:`\r
+      bg-zinc-900\r
+      rounded-2xl\r
+      p-4\r
+      text-center\r
+      w-full\r
+      max-w-[330px]\r
+      border\r
+      border-orange-500/30\r
+      shadow-lg\r
+      shadow-orange-500/10\r
+      hover:border-orange-400\r
+      hover:shadow-orange-500/30\r
+      hover:-translate-y-1\r
+      transition-all\r
+      duration-300\r
+    `,children:[(0,j.jsx)(`h3`,{className:`text-xl md:text-2xl font-bold`,children:`🥈 Açaí Tropical`}),(0,j.jsx)(`p`,{className:`text-zinc-400 mt-2 text-sm`,children:`Kiwi, Manga e Frutas Frescas`})]}),(0,j.jsxs)(`div`,{className:`\r
+      bg-zinc-900\r
+      rounded-2xl\r
+      p-4\r
+      text-center\r
+      w-full\r
+      max-w-[330px]\r
+      border\r
+      border-amber-700/30\r
+      shadow-lg\r
+      shadow-amber-700/10\r
+      hover:border-amber-500\r
+      hover:shadow-amber-500/30\r
+      hover:-translate-y-1\r
+      transition-all\r
+      duration-300\r
+    `,children:[(0,j.jsx)(`h3`,{className:`text-xl md:text-2xl font-bold`,children:`🥉 Açaí Kids`}),(0,j.jsx)(`p`,{className:`text-zinc-400 mt-2 text-sm`,children:`Granola, Banana e Chocolate`})]})]})]}),(0,j.jsx)(`p`,{className:`text-zinc-400 mt-4 text-xl`,children:`Escolha seu açaí favorito`})]}),(0,j.jsxs)(`div`,{className:`flex justify-center gap-4 mb-12`,children:[(0,j.jsx)(`button`,{className:`bg-purple-600 px-5 py-2 rounded-full`,children:`Todos`}),(0,j.jsx)(`button`,{className:`bg-zinc-800 px-5 py-2 rounded-full`,children:`Tradicionais`}),(0,j.jsx)(`button`,{className:`bg-zinc-800 px-5 py-2 rounded-full`,children:`Premium`})]}),(0,j.jsx)(`div`,{className:`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8`,children:_r.map((e,t)=>(0,j.jsxs)(`div`,{className:`\r
+    bg-zinc-900/80\r
+    backdrop-blur-lg\r
+    rounded-3xl\r
+    overflow-hidden\r
     border\r
-    border-orange-500/30\r
-    rounded-2xl\r
-    p-4\r
-    text-center\r
-    max-w-[330px]\r
-    mx-auto\r
-    shadow-lg shadow-orange-500/10\r
-    hover:shadow-orange-500/30\r
-    hover:border-orange-400\r
-    hover:-translate-y-1\r
-    transition-all\r
-    duration-300\r
-  `,children:[` `,(0,j.jsx)(`h3`,{className:`text-2xl font-bold`,children:`🥈 Açaí Tropical`}),(0,j.jsx)(`p`,{className:`text-zinc-400 mt-2 text-sm`,children:`Kiwi, Manga e Frutas Frescas`})]}),(0,j.jsxs)(`div`,{className:`\r
-    bg-zinc-900\r
-    border\r
-    border-amber-700/30\r
-    rounded-2xl\r
-    p-4\r
-    text-center\r
-    max-w-[330px]\r
-    mx-auto\r
-    shadow-lg shadow-amber-700/10\r
-    hover:shadow-amber-700/30\r
-    hover:border-amber-500\r
-    hover:-translate-y-1\r
-    transition-all\r
-    duration-300\r
-  `,children:[(0,j.jsx)(`h3`,{className:`text-2xl font-bold`,children:`🥉 Açaí Kids`}),(0,j.jsx)(`p`,{className:`text-zinc-400 mt-2 text-sm`,children:`Granola, Banana e Chocolate`})]})]})]}),(0,j.jsx)(`p`,{className:`text-zinc-400 mt-4 text-xl`,children:`Escolha seu açaí favorito`})]}),(0,j.jsxs)(`div`,{className:`flex justify-center gap-4 mb-12`,children:[(0,j.jsx)(`button`,{className:`bg-purple-600 px-5 py-2 rounded-full`,children:`Todos`}),(0,j.jsx)(`button`,{className:`bg-zinc-800 px-5 py-2 rounded-full`,children:`Tradicionais`}),(0,j.jsx)(`button`,{className:`bg-zinc-800 px-5 py-2 rounded-full`,children:`Premium`})]}),(0,j.jsx)(`div`,{className:`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8`,children:_r.map((e,t)=>(0,j.jsxs)(`div`,{className:`\r
-                bg-zinc-900/80\r
-                backdrop-blur-lg\r
-                rounded-3xl\r
-                overflow-hidden\r
-                border\r
-                border-purple-500/20\r
-                hover:border-purple-500\r
-                hover:scale-105\r
-                transition\r
-                duration-300\r
-                shadow-2xl\r
-              `,children:[(0,j.jsx)(`img`,{src:e.imagem,alt:e.nome,className:`w-full h-64 object-cover`}),(0,j.jsxs)(`div`,{className:`p-6`,children:[(0,j.jsx)(`h2`,{className:`text-2xl font-bold`,children:e.nome}),(0,j.jsx)(`p`,{className:`text-zinc-400 mt-3`,children:e.ingredientes}),(0,j.jsxs)(`div`,{className:`flex items-center justify-between mt-6`,children:[(0,j.jsx)(`span`,{className:`text-3xl font-bold text-purple-400`,children:e.preco}),(0,j.jsx)(`a`,{href:`https://wa.me/79999390396?text=Olá,%20quero%20pedir%20${e.nome}`,target:`_blank`,rel:`noreferrer`,className:`\r
-    bg-gradient-to-r\r
-    from-purple-700\r
-    to-purple-500\r
-    px-5\r
-    py-2\r
-    rounded-xl\r
-    hover:scale-105\r
+    border-purple-500/20\r
+    hover:border-purple-500\r
     transition\r
-  `,children:`Pedir`})]})]})]},t))})]}),(0,j.jsx)(`button`,{onClick:()=>t(!0),className:`\r
+    duration-300\r
+    shadow-2xl\r
+\r
+    flex\r
+    flex-row\r
+    md:block\r
+  `,children:[(0,j.jsx)(`img`,{src:e.imagem,alt:e.nome,className:`\r
+      w-32\r
+      h-32\r
+      object-cover\r
+      shrink-0\r
+\r
+      md:w-full\r
+      md:h-64\r
+    `}),(0,j.jsxs)(`div`,{className:`p-4 md:p-6 flex-1`,children:[(0,j.jsx)(`h2`,{className:`text-xl md:text-2xl font-bold`,children:e.nome}),(0,j.jsx)(`p`,{className:`text-zinc-400 mt-2 text-sm md:text-base`,children:e.ingredientes}),(0,j.jsxs)(`div`,{className:`flex items-center justify-between gap-3 mt-4`,children:[(0,j.jsx)(`span`,{className:`text-2xl md:text-3xl font-bold text-purple-400`,children:e.preco}),(0,j.jsx)(`a`,{href:`https://wa.me/79999390396?text=Olá,%20quero%20pedir%20${e.nome}`,target:`_blank`,rel:`noreferrer`,className:`\r
+          bg-gradient-to-r\r
+          from-purple-700\r
+          to-purple-500\r
+          px-5\r
+          py-2\r
+          md:px-6\r
+          md:py-3\r
+          rounded-xl\r
+          hover:scale-105\r
+          transition\r
+        `,children:`Pedir`})]})]})]},t))})]}),(0,j.jsx)(`button`,{onClick:()=>i(!0),className:`\r
     fixed\r
-    bottom-8\r
+    bottom-24\r
     right-8\r
     bg-gradient-to-r\r
     from-purple-700\r
@@ -110,25 +144,25 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     hover:scale-110\r
     transition\r
     z-50\r
-  `,children:`Faça o seu!`}),e&&(0,j.jsx)(`div`,{className:`fixed inset-0 bg-black/80 flex items-center justify-center z-50`,children:(0,j.jsxs)(`div`,{className:`bg-zinc-900 border border-purple-500/30 p-8 rounded-3xl w-[90%] max-w-md shadow-[0_0_40px_rgba(168,85,247,0.3)]`,children:[(0,j.jsx)(`h2`,{className:`text-3xl font-bold text-purple-500 mb-6`,children:`Monte seu Açaí`}),(0,j.jsxs)(`select`,{value:n,onChange:e=>r(e.target.value),className:`w-full p-3 rounded-xl bg-zinc-800 mb-4`,children:[(0,j.jsx)(`option`,{value:``,children:`Escolha o tamanho`}),(0,j.jsx)(`option`,{children:`300ml`}),(0,j.jsx)(`option`,{children:`500ml`}),(0,j.jsx)(`option`,{children:`700ml`})]}),(0,j.jsxs)(`div`,{className:`mb-4`,children:[(0,j.jsx)(`h3`,{className:`text-lg mb-2`,children:`Frutas`}),(0,j.jsxs)(`label`,{className:`flex gap-2`,children:[(0,j.jsx)(`input`,{type:`checkbox`,checked:i,onChange:e=>a(e.target.checked)}),`Banana`]}),(0,j.jsxs)(`label`,{className:`flex gap-2`,children:[(0,j.jsx)(`input`,{type:`checkbox`,checked:o,onChange:e=>s(e.target.checked)}),`Morango`]}),(0,j.jsxs)(`label`,{className:`flex gap-2`,children:[(0,j.jsx)(`input`,{type:`checkbox`,checked:c,onChange:e=>l(e.target.checked)}),`Kiwi`]})]}),(0,j.jsxs)(`div`,{className:`mb-4`,children:[(0,j.jsx)(`h3`,{className:`text-lg mb-2`,children:`Adicionais`}),(0,j.jsxs)(`label`,{className:`flex gap-2`,children:[(0,j.jsx)(`input`,{type:`checkbox`,checked:u,onChange:e=>d(e.target.checked)}),`Nutella`]}),(0,j.jsxs)(`label`,{className:`flex gap-2`,children:[(0,j.jsx)(`input`,{type:`checkbox`,checked:f,onChange:e=>p(e.target.checked)}),`Leite Ninho`]}),(0,j.jsxs)(`label`,{className:`flex gap-2`,children:[(0,j.jsx)(`input`,{type:`checkbox`,checked:m,onChange:e=>h(e.target.checked)}),`Granola`]})]}),(0,j.jsx)(`a`,{href:`https://wa.me/557999390396?text=${encodeURIComponent(`Olá!
+  `,children:`Faça o seu!`}),r&&(0,j.jsx)(`div`,{className:`fixed inset-0 bg-black/80 flex items-center justify-center z-50`,children:(0,j.jsxs)(`div`,{className:`bg-zinc-900 border border-purple-500/30 p-8 rounded-3xl w-[90%] max-w-md shadow-[0_0_40px_rgba(168,85,247,0.3)]`,children:[(0,j.jsx)(`h2`,{className:`text-3xl font-bold text-purple-500 mb-6`,children:`Monte seu Açaí`}),(0,j.jsxs)(`select`,{value:a,onChange:e=>o(e.target.value),className:`w-full p-3 rounded-xl bg-zinc-800 mb-4`,children:[(0,j.jsx)(`option`,{value:``,children:`Escolha o tamanho`}),(0,j.jsx)(`option`,{children:`300ml`}),(0,j.jsx)(`option`,{children:`500ml`}),(0,j.jsx)(`option`,{children:`700ml`})]}),(0,j.jsxs)(`div`,{className:`mb-4`,children:[(0,j.jsx)(`h3`,{className:`text-lg mb-2`,children:`Frutas`}),(0,j.jsxs)(`label`,{className:`flex gap-2`,children:[(0,j.jsx)(`input`,{type:`checkbox`,checked:s,onChange:e=>c(e.target.checked)}),`Banana`]}),(0,j.jsxs)(`label`,{className:`flex gap-2`,children:[(0,j.jsx)(`input`,{type:`checkbox`,checked:l,onChange:e=>u(e.target.checked)}),`Morango`]}),(0,j.jsxs)(`label`,{className:`flex gap-2`,children:[(0,j.jsx)(`input`,{type:`checkbox`,checked:d,onChange:e=>f(e.target.checked)}),`Kiwi`]})]}),(0,j.jsxs)(`div`,{className:`mb-4`,children:[(0,j.jsx)(`h3`,{className:`text-lg mb-2`,children:`Adicionais`}),(0,j.jsxs)(`label`,{className:`flex gap-2`,children:[(0,j.jsx)(`input`,{type:`checkbox`,checked:p,onChange:e=>m(e.target.checked)}),`Nutella`]}),(0,j.jsxs)(`label`,{className:`flex gap-2`,children:[(0,j.jsx)(`input`,{type:`checkbox`,checked:h,onChange:e=>g(e.target.checked)}),`Leite Ninho`]}),(0,j.jsxs)(`label`,{className:`flex gap-2`,children:[(0,j.jsx)(`input`,{type:`checkbox`,checked:_,onChange:e=>v(e.target.checked)}),`Granola`]})]}),(0,j.jsx)(`a`,{href:`https://wa.me/557999390396?text=${encodeURIComponent(`Olá!
 
 Quero montar um açaí.
 
-Tamanho: ${n}
+Tamanho: ${a}
 
 Frutas:
-${i?`✓ Banana
+${s?`✓ Banana
 `:``}
-${o?`✓ Morango
+${l?`✓ Morango
 `:``}
-${c?`✓ Kiwi
+${d?`✓ Kiwi
 `:``}
 
 Adicionais:
-${u?`✓ Nutella
+${p?`✓ Nutella
 `:``}
-${f?`✓ Leite Ninho
+${h?`✓ Leite Ninho
 `:``}
-${m?`✓ Granola
+${_?`✓ Granola
 `:``}
-`)}`,target:`_blank`,rel:`noreferrer`,className:`block text-center bg-purple-600 py-3 rounded-xl mt-4 hover:bg-purple-700`,children:`Enviar Pedido`}),(0,j.jsx)(`button`,{onClick:()=>t(!1),className:`mt-4 w-full text-zinc-400 hover:text-white`,children:`Fechar`})]})})]})}function yr(){return(0,j.jsxs)(`div`,{className:`min-h-screen bg-black text-white p-10`,children:[(0,j.jsx)(`h1`,{className:`text-5xl font-bold text-purple-500 mb-6`,children:`Sobre Nós`}),(0,j.jsx)(`p`,{className:`text-xl text-gray-300`,children:`Açaí Prime oferece os melhores açaís da cidade, feitos com ingredientes selecionados e muito sabor.`})]})}function br(){return(0,j.jsxs)(`div`,{className:`min-h-screen bg-black text-white p-10`,children:[(0,j.jsx)(`h1`,{className:`text-5xl font-bold text-purple-500 mb-6`,children:`Contato`}),(0,j.jsx)(`p`,{className:`text-xl text-gray-300`,children:`WhatsApp: (00) 00000-0002`}),(0,j.jsx)(`p`,{className:`text-xl text-gray-300 mt-3`,children:`Instagram: @acaiprime`})]})}function xr(){return(0,j.jsxs)(En,{basename:`/acaiteria-site`,children:[(0,j.jsx)(Xn,{}),(0,j.jsxs)(Rt,{children:[(0,j.jsx)(It,{path:`/`,element:(0,j.jsx)(gr,{})}),(0,j.jsx)(It,{path:`/menu`,element:(0,j.jsx)(vr,{})}),(0,j.jsx)(It,{path:`/sobre`,element:(0,j.jsx)(yr,{})}),(0,j.jsx)(It,{path:`/contatos`,element:(0,j.jsx)(br,{})})]})]})}Yn.createRoot(document.getElementById(`root`)).render((0,j.jsx)(x.StrictMode,{children:(0,j.jsx)(xr,{})}));
+`)}`,target:`_blank`,rel:`noreferrer`,className:`block text-center bg-purple-600 py-3 rounded-xl mt-4 hover:bg-purple-700`,children:`Enviar Pedido`}),(0,j.jsx)(`button`,{onClick:()=>i(!1),className:`mt-4 w-full text-zinc-400 hover:text-white`,children:`Fechar`})]})})]})}function yr(){return(0,j.jsxs)(`div`,{className:`min-h-screen bg-black text-white p-10`,children:[(0,j.jsx)(`h1`,{className:`text-5xl font-bold text-purple-500 mb-6`,children:`Sobre Nós`}),(0,j.jsx)(`p`,{className:`text-xl text-gray-300`,children:`Açaí Prime oferece os melhores açaís da cidade, feitos com ingredientes selecionados e muito sabor.`})]})}function br(){return(0,j.jsxs)(`div`,{className:`min-h-screen bg-black text-white p-10`,children:[(0,j.jsx)(`h1`,{className:`text-5xl font-bold text-purple-500 mb-6`,children:`Contato`}),(0,j.jsx)(`p`,{className:`text-xl text-gray-300`,children:`WhatsApp: (00) 00000-0002`}),(0,j.jsx)(`p`,{className:`text-xl text-gray-300 mt-3`,children:`Instagram: @acaiprime`})]})}function xr(){return(0,j.jsxs)(En,{basename:`/acaiteria-site`,children:[(0,j.jsx)(Xn,{}),(0,j.jsxs)(Rt,{children:[(0,j.jsx)(It,{path:`/`,element:(0,j.jsx)(gr,{})}),(0,j.jsx)(It,{path:`/menu`,element:(0,j.jsx)(vr,{})}),(0,j.jsx)(It,{path:`/sobre`,element:(0,j.jsx)(yr,{})}),(0,j.jsx)(It,{path:`/contatos`,element:(0,j.jsx)(br,{})})]})]})}Yn.createRoot(document.getElementById(`root`)).render((0,j.jsx)(x.StrictMode,{children:(0,j.jsx)(xr,{})}));

@@ -1,32 +1,104 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const produtos = [
   {
     nome: "Açaí Tradicional",
     preco: "R$ 18,90",
-    imagem:
-      "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?q=80&w=1200&auto=format&fit=crop",
+    imagem: "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?q=80&w=1200&auto=format&fit=crop",
     ingredientes: "Banana, granola e leite condensado",
   },
   {
     nome: "Açaí Premium",
     preco: "R$ 24,90",
-    imagem:
-      "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=1200&auto=format&fit=crop",
+    imagem: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=1200&auto=format&fit=crop",
     ingredientes: "Morango, Nutella e leite ninho",
   },
   {
     nome: "Combo Tropical",
     preco: "R$ 29,90",
-    imagem:
-      "https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop",
+    imagem: "https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop",
     ingredientes: "Kiwi, manga, banana e mel",
+  },
+  {
+    nome: "Açaí Supreme",
+    preco: "R$ 27,90",
+    imagem: "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?q=80&w=1200&auto=format&fit=crop",
+    ingredientes: "Morango, banana, Nutella e leite ninho",
+  },
+  {
+    nome: "Açaí com Morango",
+    preco: "R$ 21,90",
+    imagem:"https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=1200&auto=format&fit=crop",
+    ingredientes: "Morango fresco e leite condensado",
+  },
+  {
+    nome: "Açaí Chocolate",
+    preco: "R$ 23,90",
+    imagem: "https://images.unsplash.com/photo-1577805947697-89e18249d767?q=80&w=1200&auto=format&fit=crop",
+    ingredientes: "Chocolate, granulado e leite ninho",
+  },
+  {
+    nome: "Açaí Banana Crocante",
+    preco: "R$ 20,90",
+    imagem: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1200&auto=format&fit=crop",
+    ingredientes: "Banana, granola e mel",
+  },
+  {
+    nome: "Açaí Energia",
+    preco: "R$ 22,90",
+    imagem: "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?q=80&w=1200&auto=format&fit=crop",
+    ingredientes: "Banana, aveia e pasta de amendoim",
+  },
+  {
+    nome: "Açaí Kids",
+    preco: "R$ 16,90",
+    imagem: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=1200&auto=format&fit=crop",
+    ingredientes: "Banana, chocolate e granulado",
+  },
+  {
+    nome: "Açaí Festa",
+    preco: "R$ 32,90",
+    imagem: "https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1200&auto=format&fit=crop",
+    ingredientes: "Morango, banana, confetes e leite ninho",
+  },
+  {
+    nome: "Açaí Frutas Vermelhas",
+    preco: "R$ 25,90",
+    imagem: "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?q=80&w=1200&auto=format&fit=crop",
+    ingredientes: "Morango, amora e leite condensado",
   },
 ];
 
-export default function Menu() {
 
+export default function Menu() {
+const [maisVendido, setMaisVendido] = useState(0);
+
+const maisVendidos = [
+  {
+    emoji: "🥇",
+    nome: "Açaí Supreme",
+    ingredientes: "Morango, Banana, Nutella e Leite Ninho",
+  },
+  {
+    emoji: "🥈",
+    nome: "Açaí Tropical",
+    ingredientes: "Kiwi, Manga e Frutas Frescas",
+  },
+  {
+    emoji: "🥉",
+    nome: "Açaí Kids",
+    ingredientes: "Granola, Banana e Chocolate",
+  },
+];
+
+useEffect(() => {
+  const intervalo = setInterval(() => {
+    setMaisVendido((atual) => (atual + 1) % maisVendidos.length);
+  }, 3000);
+
+  return () => clearInterval(intervalo);
+}, []);
   const [abrirModal, setAbrirModal] = useState(false);
   const [tamanho, setTamanho] = useState("");
   const [banana, setBanana] = useState(false);
@@ -46,43 +118,143 @@ const [granola, setGranola] = useState(false);
       <div className="relative z-10">
 
         <div className="text-center mb-16 mt-20">
-          <h1 className="text-6xl font-bold text-purple-500">
-            Nosso Cardápio 🍇
-          </h1>
-          <div className="mb-12">
-   <h2 className="text-4xl font-bold text-purple-400 mt-6">
-    💯 Mais Vendidos
-  </h2>
+       <h1 className="
+  hero-title
+  text-4xl
+  md:text-6xl
+  text-center
+  mt-20
+">
+  Nosso Cardápio 🍇
+</h1>
+          <div className="mb-20">
+  <h3 className="hero-title text-5xl md:text-7xl text-center mt-6">
+  💯 Mais <span className="text-purple-500">Vendidos</span>
+</h3>
 
-<div className="grid md:grid-cols-3 gap-6 mb-16">
-   <div className="bg-zinc-900 border border-yellow-500 rounded-3xl p-5 text-center">
-<h3 className="text-3xl font-bold">       
-   🥇 Açaí Supreme
-      </h3>
-<p className="text-zinc-400 mt-2">      
-    Morango, Banana, Nutella e Leite Ninho
-      </p>
-    </div>
+<div className="md:hidden flex justify-center mb-12">
 
- <div className="bg-zinc-900 border border-orange-500 rounded-3xl p-5 text-center">  
- <h3 className="text-3xl font-bold">        
-  🥈 Açaí Tropical
-      </h3>
-      <p className="text-zinc-400">
-        Kiwi, Manga e Frutas Frescas
-      </p>
-    </div>
+  <div
+  key={maisVendido}
+  className="
+    bg-zinc-900
+    rounded-2xl
+    p-4
+    text-center
+    w-full
+    max-w-[330px]
+    border
+    border-purple-500/30
+    shadow-lg
+    shadow-purple-500/10
+    animate-fade-in
+  "
+>
+  <h3 className="text-xl font-bold">
+    {maisVendidos[maisVendido].emoji}{" "}
+    {maisVendidos[maisVendido].nome}
+  </h3>
 
-   <div className="bg-zinc-900 border border-orange-500 rounded-3xl p-5 text-center">
-      <h3 className="text-3xl font-bold">
-        🥉 Açaí Kids
-      </h3>
-      <p className="text-zinc-400">
-        Granola, Banana e Chocolate
-      </p>
-    </div>
+  <p className="text-zinc-400 mt-2 text-sm">
+    {maisVendidos[maisVendido].ingredientes}
+  </p>
+</div>
+</div>
 
+
+{/* PC */}
+<div className="hidden md:grid md:grid-cols-3 gap-4 mb-12 justify-items-center">
+
+  {/* Supreme */}
+  <div
+    className="
+      bg-zinc-900
+      rounded-2xl
+      p-4
+      text-center
+      w-full
+      max-w-[330px]
+      border
+      border-purple-500/30
+      shadow-lg
+      shadow-purple-500/10
+      hover:border-purple-500
+      hover:shadow-purple-500/30
+      hover:-translate-y-1
+      transition-all
+      duration-300
+    "
+  >
+    <h3 className="text-xl md:text-2xl font-bold">
+      🥇 Açaí Supreme
+    </h3>
+
+    <p className="text-zinc-400 mt-2 text-sm">
+      Morango, Banana, Nutella e Leite Ninho
+    </p>
   </div>
+
+
+  {/* Tropical */}
+  <div
+    className="
+      bg-zinc-900
+      rounded-2xl
+      p-4
+      text-center
+      w-full
+      max-w-[330px]
+      border
+      border-orange-500/30
+      shadow-lg
+      shadow-orange-500/10
+      hover:border-orange-400
+      hover:shadow-orange-500/30
+      hover:-translate-y-1
+      transition-all
+      duration-300
+    "
+  >
+    <h3 className="text-xl md:text-2xl font-bold">
+      🥈 Açaí Tropical
+    </h3>
+
+    <p className="text-zinc-400 mt-2 text-sm">
+      Kiwi, Manga e Frutas Frescas
+    </p>
+  </div>
+
+
+  {/* Kids */}
+  <div
+    className="
+      bg-zinc-900
+      rounded-2xl
+      p-4
+      text-center
+      w-full
+      max-w-[330px]
+      border
+      border-amber-700/30
+      shadow-lg
+      shadow-amber-700/10
+      hover:border-amber-500
+      hover:shadow-amber-500/30
+      hover:-translate-y-1
+      transition-all
+      duration-300
+    "
+  >
+    <h3 className="text-xl md:text-2xl font-bold">
+      🥉 Açaí Kids
+    </h3>
+
+    <p className="text-zinc-400 mt-2 text-sm">
+      Granola, Banana e Chocolate
+    </p>
+  </div>
+
+</div>
 </div>
 
           <p className="text-zinc-400 mt-4 text-xl">
@@ -106,62 +278,79 @@ const [granola, setGranola] = useState(false);
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {produtos.map((produto, index) => (
-            <div
-              key={index}
-              className="
-                bg-zinc-900/80
-                backdrop-blur-lg
-                rounded-3xl
-                overflow-hidden
-                border
-                border-purple-500/20
-                hover:border-purple-500
-                hover:scale-105
-                transition
-                duration-300
-                shadow-2xl
-              "
-            >
-              <img
-                src={produto.imagem}
-                alt={produto.nome}
-                className="w-full h-64 object-cover"
-              />
-
-              <div className="p-6">
-                <h2 className="text-2xl font-bold">
-                  {produto.nome}
-                </h2>
-
-                <p className="text-zinc-400 mt-3">
-                  {produto.ingredientes}
-                </p>
-
-                <div className="flex items-center justify-between mt-6">
-                  <span className="text-3xl font-bold text-purple-400">
-                    {produto.preco}
-                  </span>
-
-                 <a
-  href={`https://wa.me/79999390396?text=Olá,%20quero%20pedir%20${produto.nome}`}
-  target="_blank"
-  rel="noreferrer"
+           <div
+  key={index}
   className="
-    bg-gradient-to-r
-    from-purple-700
-    to-purple-500
-    px-5
-    py-2
-    rounded-xl
-    hover:scale-105
+    bg-zinc-900/80
+    backdrop-blur-lg
+    rounded-3xl
+    overflow-hidden
+    border
+    border-purple-500/20
+    hover:border-purple-500
     transition
+    duration-300
+    shadow-2xl
+
+    flex
+    flex-row
+    md:block
   "
 >
-  Pedir
-</a>
-                </div>
-              </div>
-            </div>
+  <img
+    src={produto.imagem}
+    alt={produto.nome}
+    className="
+      w-32
+      h-32
+      object-cover
+      shrink-0
+
+      md:w-full
+      md:h-64
+    "
+  />
+
+  <div className="p-4 md:p-6 flex-1">
+
+    <h2 className="text-xl md:text-2xl font-bold">
+      {produto.nome}
+    </h2>
+
+    <p className="text-zinc-400 mt-2 text-sm md:text-base">
+      {produto.ingredientes}
+    </p>
+
+    <div className="flex items-center justify-between gap-3 mt-4">
+
+      <span className="text-2xl md:text-3xl font-bold text-purple-400">
+        {produto.preco}
+      </span>
+
+      <a
+        href={`https://wa.me/79999390396?text=Olá,%20quero%20pedir%20${produto.nome}`}
+        target="_blank"
+        rel="noreferrer"
+        className="
+          bg-gradient-to-r
+          from-purple-700
+          to-purple-500
+          px-5
+          py-2
+          md:px-6
+          md:py-3
+          rounded-xl
+          hover:scale-105
+          transition
+        "
+      >
+        Pedir
+      </a>
+
+    </div>
+
+  </div>
+</div>
           ))}
 
         </div>
@@ -171,7 +360,7 @@ const [granola, setGranola] = useState(false);
   onClick={() => setAbrirModal(true)}
   className="
     fixed
-    bottom-8
+    bottom-24
     right-8
     bg-gradient-to-r
     from-purple-700

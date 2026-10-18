@@ -7,9 +7,19 @@ export default function Navbar() {
   return (
     <header className="w-full bg-black/70 backdrop-blur-md fixed top-0 left-0 border-b border-zinc-800 z-50">
       <div className="flex items-center justify-between p-6">
-        <h1 className="text-2xl md:text-3xl font-bold text-purple-500">
-          Açaí Prime
-        </h1>
+        
+<h1 className="flex items-center gap-1 text-2xl md:text-3xl">
+  <span className="text-yellow-400 text-xl -mt-3" aria-hidden="true">
+    👑
+  </span>
+  <span className="font-extrabold text-white">
+    Açaí
+  </span>
+  <span className="font-lobster text-purple-500">
+    Prime
+  </span>
+</h1>
+
 
         {/* Desktop */}
         <nav className="hidden md:flex gap-6 text-white">

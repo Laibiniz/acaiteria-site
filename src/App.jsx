@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 
@@ -9,8 +9,7 @@ import Contatos from "./Pages/Contatos";
 
 function App() {
   return (
-   <BrowserRouter basename="/acaiteria-site">
-
+    <HashRouter>
       <Navbar />
 
       <Routes>
@@ -19,8 +18,7 @@ function App() {
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/contatos" element={<Contatos />} />
       </Routes>
-
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
